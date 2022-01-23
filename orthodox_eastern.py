@@ -4,7 +4,7 @@ from datetime import *
 def getPasxa(year):
         year=int(year)
         if year%4==0 and (year%100 != 0 or year%400==0):
-            plus_days=timedelta(days=1)
+            
             a=year%19
             b=year%4
             c=year%7
@@ -23,7 +23,7 @@ def getPasxa(year):
                 orthodox_eastern=teliko+timedelta(days=1)
             return orthodox_eastern
         else:
-            plus_days=timedelta(days=1)
+            
             a=year%19
             b=year%4
             c=year%7
